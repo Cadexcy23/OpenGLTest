@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\freeglut.3.0.0.v140.1.0.2\build\freeglut.3.0.0.v140.props" Condition="Exists('..\packages\freeglut.3.0.0.v140.1.0.2\build\freeglut.3.0.0.v140.props')" />
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{ea49b756-3caa-499f-b1ec-5cd90151bc8a}</ProjectGuid>
+    <RootNamespace>OpenGL_Test</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>D:\OLD DRIVES\OLD CODING\Coding\C++\Projects\OpenGL Test\packages\sdl2.nuget.2.30.2\build\native\include;D:\OLD DRIVES\OLD CODING\Coding\C++\Projects\OpenGL Test\packages\sdl2_image.nuget.2.8.2\build\native\include;D:\OLD DRIVES\OLD CODING\Coding\C++\Projects\OpenGL Test\packages\sdl2_mixer.nuget.2.8.0\build\native\include;D:\OLD DRIVES\OLD CODING\Coding\C++\Projects\OpenGL Test\packages\glew.v140.1.12.0\build\native\include;D:\OLD DRIVES\OLD CODING\Coding\C++\Projects\OpenGL Test\packages\freeglut.3.0.0.v140.1.0.2\sources\GL;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\OLD DRIVES\OLD CODING\Coding\C++\Projects\OpenGL Test\packages\sdl2.nuget.2.30.2\build\native\lib\x64;D:\OLD DRIVES\OLD CODING\Coding\C++\Projects\OpenGL Test\packages\sdl2_image.nuget.2.8.2\build\native\lib\x64;D:\OLD DRIVES\OLD CODING\Coding\C++\Projects\OpenGL Test\packages\sdl2_mixer.nuget.2.8.0\build\native\lib\x64;D:\OLD DRIVES\OLD CODING\Coding\C++\Projects\OpenGL Test\packages\glew.v140.1.12.0\build\native\lib\x64\Release;D:\OLD DRIVES\OLD CODING\Coding\C++\Projects\OpenGL Test\packages\freeglut.3.0.0.v140.1.0.2\runtimes\win-x64\native\Release;D:\OLD DRIVES\OLD CODING\Coding\C++\Projects\OpenGL Test\packages\freeglut.3.0.0.v140.1.0.2\runtimes\win-x64\native\Debug;D:\OLD DRIVES\OLD CODING\Coding\C++\Projects\OpenGL Test\packages\glew.v140.1.12.0\build\native\lib\x64\Debug;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>D:\OLD DRIVES\OLD CODING\Coding\C++\Projects\OpenGL Test\packages\sdl2.nuget.2.30.2\build\native\include;D:\OLD DRIVES\OLD CODING\Coding\C++\Projects\OpenGL Test\packages\sdl2_image.nuget.2.8.2\build\native\include;D:\OLD DRIVES\OLD CODING\Coding\C++\Projects\OpenGL Test\packages\sdl2_mixer.nuget.2.8.0\build\native\include;D:\OLD DRIVES\OLD CODING\Coding\C++\Projects\OpenGL Test\packages\glew.v140.1.12.0\build\native\include;D:\OLD DRIVES\OLD CODING\Coding\C++\Projects\OpenGL Test\packages\freeglut.3.0.0.v140.1.0.2\sources\GL;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\OLD DRIVES\OLD CODING\Coding\C++\Projects\OpenGL Test\packages\sdl2.nuget.2.30.2\build\native\lib\x64;D:\OLD DRIVES\OLD CODING\Coding\C++\Projects\OpenGL Test\packages\sdl2_image.nuget.2.8.2\build\native\lib\x64;D:\OLD DRIVES\OLD CODING\Coding\C++\Projects\OpenGL Test\packages\sdl2_mixer.nuget.2.8.0\build\native\lib\x64;D:\OLD DRIVES\OLD CODING\Coding\C++\Projects\OpenGL Test\packages\glew.v140.1.12.0\build\native\lib\x64\Release;D:\OLD DRIVES\OLD CODING\Coding\C++\Projects\OpenGL Test\packages\freeglut.3.0.0.v140.1.0.2\runtimes\win-x64\native\Release;D:\OLD DRIVES\OLD CODING\Coding\C++\Projects\OpenGL Test\packages\freeglut.3.0.0.v140.1.0.2\runtimes\win-x64\native\Debug;D:\OLD DRIVES\OLD CODING\Coding\C++\Projects\OpenGL Test\packages\glew.v140.1.12.0\build\native\lib\x64\Debug;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>D:\OLD DRIVES\OLD CODING\Coding\C++\Projects\OpenGL Test\packages\sdl2.nuget.2.30.2\build\native\include;D:\OLD DRIVES\OLD CODING\Coding\C++\Projects\OpenGL Test\packages\sdl2_image.nuget.2.8.2\build\native\include;D:\OLD DRIVES\OLD CODING\Coding\C++\Projects\OpenGL Test\packages\sdl2_mixer.nuget.2.8.0\build\native\include;D:\OLD DRIVES\OLD CODING\Coding\C++\Projects\OpenGL Test\packages\glew.v140.1.12.0\build\native\include;D:\OLD DRIVES\OLD CODING\Coding\C++\Projects\OpenGL Test\packages\freeglut.3.0.0.v140.1.0.2\sources\GL;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\OLD DRIVES\OLD CODING\Coding\C++\Projects\OpenGL Test\packages\sdl2.nuget.2.30.2\build\native\lib\x64;D:\OLD DRIVES\OLD CODING\Coding\C++\Projects\OpenGL Test\packages\sdl2_image.nuget.2.8.2\build\native\lib\x64;D:\OLD DRIVES\OLD CODING\Coding\C++\Projects\OpenGL Test\packages\sdl2_mixer.nuget.2.8.0\build\native\lib\x64;D:\OLD DRIVES\OLD CODING\Coding\C++\Projects\OpenGL Test\packages\glew.v140.1.12.0\build\native\lib\x64\Release;D:\OLD DRIVES\OLD CODING\Coding\C++\Projects\OpenGL Test\packages\freeglut.3.0.0.v140.1.0.2\runtimes\win-x64\native\Release;D:\OLD DRIVES\OLD CODING\Coding\C++\Projects\OpenGL Test\packages\freeglut.3.0.0.v140.1.0.2\runtimes\win-x64\native\Debug;D:\OLD DRIVES\OLD CODING\Coding\C++\Projects\OpenGL Test\packages\glew.v140.1.12.0\build\native\lib\x64\Debug;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>D:\OLD DRIVES\OLD CODING\Coding\C++\Projects\OpenGL Test\packages\sdl2.nuget.2.30.2\build\native\include;D:\OLD DRIVES\OLD CODING\Coding\C++\Projects\OpenGL Test\packages\sdl2_image.nuget.2.8.2\build\native\include;D:\OLD DRIVES\OLD CODING\Coding\C++\Projects\OpenGL Test\packages\sdl2_mixer.nuget.2.8.0\build\native\include;D:\OLD DRIVES\OLD CODING\Coding\C++\Projects\OpenGL Test\packages\glew.v140.1.12.0\build\native\include;D:\OLD DRIVES\OLD CODING\Coding\C++\Projects\OpenGL Test\packages\freeglut.3.0.0.v140.1.0.2\sources\GL;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\OLD DRIVES\OLD CODING\Coding\C++\Projects\OpenGL Test\packages\sdl2.nuget.2.30.2\build\native\lib\x64;D:\OLD DRIVES\OLD CODING\Coding\C++\Projects\OpenGL Test\packages\sdl2_image.nuget.2.8.2\build\native\lib\x64;D:\OLD DRIVES\OLD CODING\Coding\C++\Projects\OpenGL Test\packages\sdl2_mixer.nuget.2.8.0\build\native\lib\x64;D:\OLD DRIVES\OLD CODING\Coding\C++\Projects\OpenGL Test\packages\glew.v140.1.12.0\build\native\lib\x64\Release;D:\OLD DRIVES\OLD CODING\Coding\C++\Projects\OpenGL Test\packages\freeglut.3.0.0.v140.1.0.2\runtimes\win-x64\native\Release;D:\OLD DRIVES\OLD CODING\Coding\C++\Projects\OpenGL Test\packages\freeglut.3.0.0.v140.1.0.2\runtimes\win-x64\native\Debug;D:\OLD DRIVES\OLD CODING\Coding\C++\Projects\OpenGL Test\packages\glew.v140.1.12.0\build\native\lib\x64\Debug;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <AdditionalDependencies>opengl32.lib;freeglut.lib;glew32s.lib;glew32sd.lib;SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_mixer.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;freeglut.lib;glew32s.lib;glew32sd.lib;SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_mixer.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>opengl32.lib;freeglut.lib;glew32s.lib;glew32sd.lib;SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_mixer.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;freeglut.lib;glew32s.lib;glew32sd.lib;SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_mixer.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Artist.cpp" />
+    <ClCompile Include="Boot.cpp" />
+    <ClCompile Include="Button.cpp" />
+    <ClCompile Include="Controller.cpp" />
+    <ClCompile Include="Mixer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Artist.h" />
+    <ClInclude Include="Button.h" />
+    <ClInclude Include="Controller.h" />
+    <ClInclude Include="FPSCounter.h" />
+    <ClInclude Include="Mixer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="..\packages\sdl2.nuget.redist.2.30.2\build\native\sdl2.nuget.redist.targets" Condition="Exists('..\packages\sdl2.nuget.redist.2.30.2\build\native\sdl2.nuget.redist.targets')" />
+    <Import Project="..\packages\sdl2.nuget.2.30.2\build\native\sdl2.nuget.targets" Condition="Exists('..\packages\sdl2.nuget.2.30.2\build\native\sdl2.nuget.targets')" />
+    <Import Project="..\packages\sdl2_image.nuget.redist.2.8.2\build\native\sdl2_image.nuget.redist.targets" Condition="Exists('..\packages\sdl2_image.nuget.redist.2.8.2\build\native\sdl2_image.nuget.redist.targets')" />
+    <Import Project="..\packages\sdl2_image.nuget.2.8.2\build\native\sdl2_image.nuget.targets" Condition="Exists('..\packages\sdl2_image.nuget.2.8.2\build\native\sdl2_image.nuget.targets')" />
+    <Import Project="..\packages\sdl2_mixer.nuget.redist.2.8.0\build\native\sdl2_mixer.nuget.redist.targets" Condition="Exists('..\packages\sdl2_mixer.nuget.redist.2.8.0\build\native\sdl2_mixer.nuget.redist.targets')" />
+    <Import Project="..\packages\sdl2_mixer.nuget.2.8.0\build\native\sdl2_mixer.nuget.targets" Condition="Exists('..\packages\sdl2_mixer.nuget.2.8.0\build\native\sdl2_mixer.nuget.targets')" />
+    <Import Project="..\packages\glew.v140.1.12.0\build\native\glew.v140.targets" Condition="Exists('..\packages\glew.v140.1.12.0\build\native\glew.v140.targets')" />
+  </ImportGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\sdl2.nuget.redist.2.30.2\build\native\sdl2.nuget.redist.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\sdl2.nuget.redist.2.30.2\build\native\sdl2.nuget.redist.targets'))" />
+    <Error Condition="!Exists('..\packages\sdl2.nuget.2.30.2\build\native\sdl2.nuget.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\sdl2.nuget.2.30.2\build\native\sdl2.nuget.targets'))" />
+    <Error Condition="!Exists('..\packages\sdl2_image.nuget.redist.2.8.2\build\native\sdl2_image.nuget.redist.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\sdl2_image.nuget.redist.2.8.2\build\native\sdl2_image.nuget.redist.targets'))" />
+    <Error Condition="!Exists('..\packages\sdl2_image.nuget.2.8.2\build\native\sdl2_image.nuget.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\sdl2_image.nuget.2.8.2\build\native\sdl2_image.nuget.targets'))" />
+    <Error Condition="!Exists('..\packages\sdl2_mixer.nuget.redist.2.8.0\build\native\sdl2_mixer.nuget.redist.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\sdl2_mixer.nuget.redist.2.8.0\build\native\sdl2_mixer.nuget.redist.targets'))" />
+    <Error Condition="!Exists('..\packages\sdl2_mixer.nuget.2.8.0\build\native\sdl2_mixer.nuget.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\sdl2_mixer.nuget.2.8.0\build\native\sdl2_mixer.nuget.targets'))" />
+    <Error Condition="!Exists('..\packages\glew.v140.1.12.0\build\native\glew.v140.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\glew.v140.1.12.0\build\native\glew.v140.targets'))" />
+    <Error Condition="!Exists('..\packages\freeglut.3.0.0.v140.1.0.2\build\freeglut.3.0.0.v140.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\freeglut.3.0.0.v140.1.0.2\build\freeglut.3.0.0.v140.props'))" />
+  </Target>
+</Project>
